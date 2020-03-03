@@ -1,0 +1,31 @@
+.mainPane {
+    -fx-background-image: url("../images/startback.png");
+    -fx-background-color: #323232;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.buttonBox {
+    -fx-padding: 10px;
+    -fx-spacing: 20px;
+}
+
+.button {
+    -fx-background-color: red;
+    -fx-padding: 5px;
+    -fx-text-fill: white;
+    -fx-min-width: 193px;
+    -fx-min-height: 50px;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: Heavitas;
+}
+
+.button:hover {
+    -fx-opacity: 0.7;
+}
+
+.userBox {
+    -fx-font-size: 20px;
+    -fx-spacing: 5px;
+}

@@ -1,0 +1,80 @@
+.backBtn{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-text-fill:transparent;
+}
+
+.difbutton {
+    -fx-background-color: red;
+    -fx-padding: 5px;
+    -fx-text-fill: white;
+    -fx-min-width: 150px;
+    -fx-min-height: 50px;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: Heavitas;
+}
+
+.difbutton:hover {
+    -fx-opacity: 0.7;
+}
+
+.tab {
+    -fx-background-color: red;
+    -fx-font-family: Heavitas;
+}
+
+.tab:selected {
+    -fx-background-color:  #17151C;
+}
+
+.tabpane{
+    -fx-tab-min-width: 100px;
+    -fx-tab-min-height: 30px;
+    -fx-background-color:  #17151C;
+}
+
+.tab {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.tab .tab-label {
+    -fx-text-fill: white;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-background-color: #0B0A0D;
+    -fx-text-alignment: center;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+.table-cell {
+    -fx-font-family: Heavitas;
+    -fx-min-height: 30px;
+}
+
+.table-cell:selected {
+    -fx-background-color: red;
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #0B0A0D;
+    -fx-font-family: Heavitas;
+}
+
+
+

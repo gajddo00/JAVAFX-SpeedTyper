@@ -1,0 +1,37 @@
+.backBtn{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-text-fill:transparent;
+}
+
+.flo {
+    -fx-background-color: #0B0A0D;
+}
+
+.statLbl {
+    -fx-font-size: 50;
+    -fx-font-family: Heavitas;
+    -fx-text-fill: white;
+}
+
+.vbox {
+    -fx-background-color: #0B0A0D;
+}
+
+.statTitle {
+    -fx-font-size: 20;
+    -fx-font-family: Oswald;
+    -fx-text-fill: white;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-background-color: transparent;
+}
+.split-pane:vertical > .split-pane-divider {
+    -fx-background-color: transparent;
+}
+
+.statback{
+    -fx-background-image: url("../images/startback.png");
+    -fx-background-size: 80%;
+}

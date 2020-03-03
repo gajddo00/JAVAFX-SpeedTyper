@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"  stylesheets="@../css/trainModeSceneStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TrainModeController">
+    <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" styleClass="vbox"
+               stylesheets="@../css/trainModeSceneStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+               AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0"
+                    stylesheets="@../css/trainModeSceneStyle.css">
+            <HBox alignment="CENTER" layoutY="-8.0" prefHeight="204.0" prefWidth="598.0"
+                  style="-fx-background-color: #17151C;" styleClass="statback" AnchorPane.bottomAnchor="0.0"
+                  AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <GridPane alignment="CENTER" hgap="10.0" prefHeight="20.0" prefWidth="515.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0"
+                                           prefWidth="150.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0"
+                                           prefWidth="167.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0"
+                                           prefWidth="214.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="94.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <Label fx:id="wordsCorrect" alignment="CENTER" contentDisplay="CENTER" styleClass="statLbl"
+                           stylesheets="@../css/trainModeSceneStyle.css" text="0" textAlignment="CENTER"
+                           GridPane.halignment="CENTER"/>
+                    <Label fx:id="wordsWrong" styleClass="statLbl" stylesheets="@../css/trainModeSceneStyle.css"
+                           text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+                    <Label fx:id="accuracyLbl" prefHeight="63.0" prefWidth="218.0" styleClass="statLbl"
+                           stylesheets="@../css/trainModeSceneStyle.css" text="100,0%" GridPane.columnIndex="2"
+                           GridPane.halignment="CENTER"/>
+                    <Label alignment="CENTER" contentDisplay="TOP" prefHeight="28.0" prefWidth="132.0"
+                           styleClass="statTitle" stylesheets="@../css/trainModeSceneStyle.css"
+                           text="Words correct" textAlignment="CENTER" GridPane.halignment="CENTER"
+                           GridPane.rowIndex="1"/>
+                    <Label alignment="CENTER" contentDisplay="TOP" prefHeight="28.0" prefWidth="159.0"
+                           styleClass="statTitle" stylesheets="@../css/trainModeSceneStyle.css"
+                           text="Words wrong" textAlignment="CENTER" GridPane.columnIndex="1"
+                           GridPane.halignment="CENTER" GridPane.rowIndex="1"/>
+                    <Label alignment="CENTER" contentDisplay="TOP" styleClass="statTitle"
+                           stylesheets="@../css/trainModeSceneStyle.css" text="Accuracy" textAlignment="CENTER"
+                           GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1"/>
+                    <HBox.margin>
+                        <Insets bottom="100.0" top="100.0"/>
+                    </HBox.margin>
+                </GridPane>
+            </HBox>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="196.0" prefWidth="598.0"
+                      styleClass="flo" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <VBox alignment="CENTER" spacing="20.0" styleClass="vbox"
+                      stylesheets="@../css/trainModeSceneStyle.css">
+                    <Label fx:id="textLbl" text="Label" textFill="WHITE">
+                        <font>
+                            <Font name="Heavitas" size="26.0"/>
+                        </font>
+                    </Label>
+                    <TextField fx:id="textFld" prefHeight="44.0" text="Type here.">
+                        <font>
+                            <Font size="26.0"/>
+                        </font>
+                    </TextField>
+                </VBox>
+            </FlowPane>
+        </AnchorPane>
+    </SplitPane>
+    <ImageView fitHeight="60.0" fitWidth="57.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../images/arrow2.png" />
+    </ImageView>
+    <Button layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#getBack" prefHeight="46.0" prefWidth="39.0" styleClass="backBtn" stylesheets="@../css/startSceneStyle.css" text="Button">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+
+</AnchorPane>

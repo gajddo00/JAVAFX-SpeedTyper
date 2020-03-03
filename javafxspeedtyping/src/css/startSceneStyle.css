@@ -1,0 +1,61 @@
+.mainPane {
+    -fx-background-color: white;
+}
+
+.animationPane {
+    -fx-background-color: #17151C;
+}
+
+.drawPane {
+    -fx-background-color: #17151C;
+    -fx-background-image: url("../images/background.png");
+    -fx-background-repeat: no-repeat;
+}
+
+.splitPane {
+    -fx-background-color:  #0B0A0D;
+}
+
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-background-color: transparent;
+}
+.split-pane:vertical > .split-pane-divider {
+    -fx-background-color: transparent;
+}
+
+.backBtn{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-text-fill:transparent;
+}
+
+.difbutton {
+    -fx-background-color: red;
+    -fx-padding: 5px;
+    -fx-text-fill: white;
+    -fx-min-width: 150px;
+    -fx-min-height: 50px;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: Heavitas;
+}
+
+.difbutton:hover {
+    -fx-opacity: 0.7;
+}
+
+.overbutton {
+    -fx-background-color: red;
+    -fx-padding: 5px;
+    -fx-text-fill: white;
+    -fx-min-width: 80px;
+    -fx-min-height: 50px;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: Heavitas;
+}
+
+.overbutton:hover {
+    -fx-opacity: 0.7;
+}
