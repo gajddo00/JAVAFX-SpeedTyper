@@ -6,7 +6,7 @@ Speed typing game written in JAVA with the usage of JAVA FX for GUI.
 
 ![Main Page](/images/st-1.png)
 
-## Choose dificulty and practice speed typing by playing a game! 
+## Choose difficulty and practice speed typing by playing a game! 
 
 ![GamePlay](/images/st-2.png)
 
